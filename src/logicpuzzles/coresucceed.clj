@@ -1,5 +1,4 @@
-(ns logicpuzzles.core
-  (:gen-class)
+(ns logicpuzzles.coresucceed
   (:refer-clojure :exclude [== !=])
   (:use clojure.core.logic
         [clojure.tools.macro :only [symbol-macrolet]]
@@ -143,7 +142,7 @@
           (== [:amaya _ _ _] s)
           (membero s answers))))
                           
-(defn solve []
+
 
 (show
   (let [people       (repeatedly 5 lvar)
@@ -158,23 +157,24 @@
          ;(== magazines [:fortune :time :cosmopolitan :us-weekly :vogue])
          ;(== cheeses [:asiago :blue-cheese :mascarpone :mozzarella :muenster])
          ;(== reservations [5 6 7 7.5 8.5])
-         (rule-0 answers)
+
          (rule-1 answers)
           (rule-2 answers)
-          (rule-3 answers)
+         (rule-3 answers)
           (rule-4 answers)
-          (rule-5 answers)
+;          (rule-5 answers)
           (rule-6 answers)
-          (rule-7 answers)
-          (rule-8 answers)
+;          (rule-7 answers)
+;          (rule-8 answers)
           (rule-9 answers)
-          (rule-10 answers)
-          (rule-11 answers)
+;          (rule-10 answers)
+          ;(rule-11 answers)
+         (rule-0 answers)
 
           ;(permuteo magazines [:fortune :time :cosmopolitan :us-weekly :vogue])
           ;(permuteo cheeses [:asiago :blue-cheese :mascarpone :mozzarella :muenster])
                                         ;(permuteo reservations [5 6 7 7.5 8.5])
-          ))))
+          )))
 
 ;;; Time to (run 1 [q]): ~1s.
 ;;; Time to (run* [q]): ~16s.
